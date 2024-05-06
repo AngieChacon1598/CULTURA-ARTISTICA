@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <section class="contact">
+        <div class="title">
+            <h2>Bienvenidos a Valle grande</h2>
+        </div>
+
+        <div class="img-logo">
+            
+        </div>
+        <div class="container">
+            <img src="img/Logo-VG_Tpt02.png" alt="">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Dirección</h3>
+                        <p>Antigua Panamericana Sur Km 144<br>San Vicente de Cañete</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Teléfono</h3>
+                        <p>(01) 5812261</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>admision@vallegrande.edu.pe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="https://formsubmit.co/angie.chacon.a@vallegrande.edu.pe" method="POST">
+                    <center><h2><b>Bienvenidos</b></h2></center>
+                    <br>
+                    <div class = "btn">
+                        <center><input type="radio" name="Sistemas" value="1"> Análisis de Sistemas
+                            <input type="radio" name="Agraria" value="2"> Producción Agraria</center>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="nombre" id = "name" required="required">
+                        <span>Nombre completo</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="apellidos" id = "name" required="required">
+                        <span>Apellidos</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="age" id = "age" required="required">
+                        <span>Edad</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" id = "email" required="required">
+                        <span>Correo</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="password" id = "password" required="required">
+                        <span>Contraseña</span>
+                    </div> <br>
+                    <div>
+                           <center><a href="#">¿Olvidó su contraseña?</a></center> <br>
+                           <input name="cbipeliculas" type="checkbox" /> Aceptar la política de privacidad de los términos y condiciones.
+                    </div>
+                    
+                    
+                    
+                    <div class="inputBox">
+                        <input type="submit" name="" value="REGISTRARME">
+                    </div>
+                    <p class="warnings" id="warnings"></p>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/HTML/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
