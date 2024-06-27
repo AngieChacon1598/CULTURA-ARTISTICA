@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueños del Mar - Reservas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sueños del Mar</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="imagen">
+        <img src="imagen1.jpg" alt="">
+    </div>
+
+    <section id="inicio">
+        <h2>Bienvenido a Mi Hotel</h2>
+        <p>¡Bienvenido/a al hotel Sueños del Mar! Nos complace darle la bienvenida y estamos agradecidos de que haya
+            elegido nuestro hotel para su estancia. Esperamos que esta sea lo más satisfactoria posible..</p>
+    </section>
+
+    <section id="habitaciones">
+        <h2>Nuestras Habitaciones</h2>
+        <p>Descubra nuestras confortables habitaciones.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos una variedad de servicios para hacer su estadía más placentera.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Complete el formulario para hacer una reserva:</p><br><br>
+        <form id="formulario-reserva">
+            <label for="nombre"><b>Nombres completos:</b></label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email"><b>Correo electrónico:</b></label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="fecha_llegada"><b>Fecha de llegada:</b></label>
+            <input type="date" id="fecha_llegada" name="fecha_llegada" required><br><br>
+
+            <label for="fecha_salida"><b>Fecha de salida:</b></label>
+            <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+
+            <label for="habitacion"><b>Tipo de habitación:</b></label>
+            <select id="habitacion" name="habitacion">
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+            </select><br><br>
+
+
+            <fieldset>
+                <legend><b>Preferencias de cama</b></legend><br>
+                <label>
+                    <input type="radio" name="tamaño" value="large"> Una cama grande
+                </label>
+                <label>
+                    <input type="radio" name="tamaño" value="small"> Dos camas pequeñas
+                </label>
+            </fieldset><br><br>
+
+
+            <div class="form-control">
+                <label for="habitacion"><b>Comentarios adicionales:</b></label>
+                <textarea id="message" name="message">Escriba su mensaje...</textarea>
+            </div><br>
+
+
+            <input type="submit" value="Realizar reserva">
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos Reservados &copy; 2024 Sueños del Mar.</p>
+    </footer>
+
+</body>
+
+</html>
